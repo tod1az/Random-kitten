@@ -2,7 +2,7 @@ const url = `https://api.giphy.com/v1/gifs/random?api_key=${process.env.API_KEY}
 const getCatImage = async () => {
   const response = await fetch(url,{ cache: "no-store" })
   const { data } = await response.json()
-  return data.images.original.url
+  return data?.images?.original?.url
 }
 import CatImage from "./image/page"
 
