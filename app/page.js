@@ -4,7 +4,7 @@ const getCatImage = async () => {
   const { data } = await response.json()
   return data
 }
-import CatImage from "./image/page"
+import CatImage from "./Components/Image"
 
 export default async function Home () {
   const image = await getCatImage()
