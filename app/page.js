@@ -8,8 +8,6 @@ import CatImage from "./image/page"
 
 export default async function Home () {
   const image = await getCatImage()
-  console.log(image?.images?.original?.url)
-  console.log(process.env.API_KEY)
 
   return (
     <main className="flex min-h-screen p-28  flex-col items-center">
