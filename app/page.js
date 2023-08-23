@@ -7,12 +7,13 @@ const getCatImage = async () => {
 import CatImage from "./image/page"
 
 export default async function Home () {
-  const imagen = await getCatImage()
+  const image = await getCatImage()
+  console.log(image)
 
   return (
     <main className="flex min-h-screen p-28  flex-col items-center">
       <h1 className="text-3xl font-mono whitespace-nowrap">Random Kitten!</h1>
-      <CatImage cat={imagen} />
+      <CatImage cat={image} />
     </main>
   )
 }
