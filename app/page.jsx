@@ -7,7 +7,7 @@ export default async function Home () {
 
   return (
     <main className="flex min-h-screen p-28  flex-col items-center">
-      <h1 className="text-5xl font-mono whitespace-nowrap">Random Kitten!</h1>
+      <h1 className="md:text-5xl text-3xl font-mono whitespace-nowrap">Random Kitten!</h1>
       <CatImage cat={image?.images?.original?.url} />
       <Footer/>
     </main>
